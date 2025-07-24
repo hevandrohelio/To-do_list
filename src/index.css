@@ -46,16 +46,19 @@ button {
   font-weight: bold;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: background-color 0.25s;
+  transition: background-color 0.5s, border-color 0.5s;
 }
 .add-button:hover{
   background-color: #20af00;
+  border-color: #2fff00;
 }
 .delete-button:hover{
   background-color: #890000;
+  border-color: #fe0000;
 }
 .move-button:hover{
   background-color: #001380;
+  border-color: #0026ff;
 }
 .delete-button, .move-button{
   padding: 8px 12px;
@@ -66,8 +69,20 @@ button {
 input[type="text"]{
   font-size: 1.6rem;
   padding: 10px;
+  margin-right: 5px;
   border:  2px solid gray;
   border-radius: 5px;
+  transition: box-shadow 0.5s;
+}
+input[type="text"]:hover{
+    outline: none;
+    border-color: #c5c5c5;
+    box-shadow: 0 0 10px #ffffff;
+}
+input[type="text"]:focus{
+    outline: none;
+    border-color: #c5c5c5;
+    box-shadow: 0 0 10px #ffffff;
 }
 ol{
   padding: 0;
